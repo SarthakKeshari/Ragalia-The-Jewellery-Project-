@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bellota:wght@700&family=Lato&display=swap');
+
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+nav{
+	background-color: pink;
+}
+
+.navbar-brand{
+	padding: 10px;
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 0.5px;
+}
+
+#navbarNav{
+	justify-content: flex-end;
+}
+
+.nav-link{
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 5px;
+}
+
+.dropdown-menu{
+	background-color: pink;
+}
+
+.dropdown-menu .dropdown-item{
+	padding: 10px;
+}
+
+.carousel-item .img-fluid{
+ 	width: 100%;
+    height: 500px;
+}
+
+.d-md-block{
+	transform: translate(-15%);
+	width: 100%;
+	background-color: rgb(255,255,255,0.4);
+	color: black;
+	font-family: 'Bellota', cursive;
+}
+
+.d-md-block p{
+	font-size: 15px;
+}
+
+.new-release,.collection{
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.release{
+	padding: 15px;
+	margin-top: 15px; 
+}
+
+.release .img-fluid{
+ 	width: 40%;
+    height: 200px;
+    border-radius: 10% 0 10% 0;
+    border: 1px solid black;
+}
+
+.collection-types{
+	padding: 15px;
+	margin-top: 15px; 
+}
+
+.collection-types .img-fluid{
+	width: 100%;
+    height: 200px;
+    border-radius: 10%;
+    border: 1px solid black;
+}
+
+#collection-div{
+	width: 100%;
+	height: 150vh;
+}
+
+#left-collection{
+	width: 50%;
+	float: left;
+	height: 140vh;
+}
+
+#right-collection{
+	margin-top: 100px;
+	width: 50%;
+	float: right;
+	height: 125vh;
+}
+
+#contact-us{
+	width: 100%;
+	height: 200px;
+	background-color: black;
+}
+
+#logo{
+	width: 50%;
+	height: 200px;
+	background-color: black;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#logo-pic{
+	width: 65%;
+	height: 60%;
+}
+
+#info{
+	width: 50%;
+	height: 200px;
+	background-color: black;
+	color: white;
+	float: right; 
+}
+
+#info p{
+	padding: 0;
+	margin: 0;
+}
+
+ul{
+	list-style: none;
+}
+
+.info-small{
+	font-size: 12px;
+}
+
+.copyright{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	font-size: 10px;
+}
