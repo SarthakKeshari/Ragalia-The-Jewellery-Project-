@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bellota:wght@700&family=Lato&display=swap');
+
+body{
+	text-align: center;
+	background-image: url("about-wallpaper1.jpg");
+	background-position: center;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+nav{
+	background-color: pink;
+}
+
+.navbar-brand{
+	padding: 10px;
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 0.5px;
+}
+
+#navbarNav{
+	justify-content: flex-end;
+}
+
+.nav-link{
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 5px;
+}
+
+.dropdown-menu{
+	background-color: pink;
+}
+
+.dropdown-menu .dropdown-item{
+	padding: 10px;
+}
+
+.dropdown-menu{
+	flex-direction: column;
+	text-align: center;
+}
+
+.about{
+	padding: 10px;
+	height: 100vh;
+}
+
+.about h3{
+	font-family: 'Bellota', cursive;
+}
+
+.about p{
+	font-family: 'Lato', sans-serif;
+}
+
+.copyright{
+	background-color: white;
+	border-top: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	font-size: 10px;
+}

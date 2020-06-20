@@ -2,6 +2,8 @@
 
 body{
 	font-family: 'Lato', sans-serif;
+	background-image: url("about-wallpaper1.jpg");
+	background-size: cover;
 }
 
 nav{
@@ -99,6 +101,20 @@ nav{
 	height: 125vh;
 }
 
+#product-div{
+	width: 100%;
+	height: 150vh;
+	display: flex;
+	flex-direction: row;
+}
+
+#product-div img{
+	width: 100%;
+	height: 150vh;
+}
+
+
+
 #contact-us{
 	width: 100%;
 	height: 200px;
@@ -138,11 +154,18 @@ ul{
 	list-style: none;
 }
 
+.dropdown-menu{
+	flex-direction: column;
+	text-align: center;
+}
+
 .info-small{
 	font-size: 12px;
 }
 
 .copyright{
+	background-color: white;
+	border-top: 1px solid black;
 	display: flex;
 	justify-content: center;
 	align-content: center;
