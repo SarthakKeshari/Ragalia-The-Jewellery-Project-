@@ -1,19 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bellota:wght@700&family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bellota:wght@700&family=Lato:wght@&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+
+*{
+	overflow-x: hidden;
+	color: white;
+}
 
 body{
 	font-family: 'Lato', sans-serif;
-	background-image: url("about-wallpaper1.jpg");
-	background-size: cover;
+	background-color: rgba(0,0,0,0.9);
 }
 
 nav{
-	background-color: pink;
+	background-color: black;
+	overflow-x: hidden;
 }
 
 .navbar-brand{
-	padding: 10px;
-	font-family: 'Anton', sans-serif;
+	font-family: 'Rochester', cursive;
+	font-size: 30px;
 	letter-spacing: 0.5px;
+	color: white;
+	text-shadow: 2px 4px 4px gold;
+}
+
+.navbar h2{
+	margin: 0px;
+	font-size: 30px;
+	padding: 4px;
 }
 
 #navbarNav{
@@ -52,8 +66,15 @@ nav{
 	font-size: 15px;
 }
 
-.new-release,.collection{
-	margin-top: 40px;
+.new-release{
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.collection,.products{
+	margin-top: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -64,67 +85,79 @@ nav{
 	margin-top: 15px; 
 }
 
-.release .img-fluid{
- 	width: 40%;
-    height: 200px;
-    border-radius: 10% 0 10% 0;
+.media{
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.media-body p{
+	font-size: 15px;
+}
+
+.media img{
+	width: 50%;
+	padding: 10px;
+	border-radius: 10% 0 10% 0;
     border: 1px solid black;
 }
 
-.collection-types{
-	padding: 15px;
-	margin-top: 15px; 
+.release-hr{
+	border-top: 1px solid red;
+	transform: rotateZ(5deg);
+	padding: 10px;
 }
 
-.collection-types .img-fluid{
-	width: 100%;
-    height: 200px;
-    border-radius: 10%;
-    border: 1px solid black;
+.collection-items img{
+	width: 60%;
+	padding: 10px;
 }
 
-#collection-div{
-	width: 100%;
-	height: 150vh;
+.left{
+	float: left;
+	border-radius: 80px;
 }
 
-#left-collection{
+.right{
+	float: right;
+	border-radius: 80px;
+}
+
+.collection-hr{
+	border-top: 1px solid red;
+}
+
+#left-product{
 	width: 50%;
 	float: left;
-	height: 140vh;
 }
 
-#right-collection{
-	margin-top: 100px;
+#left-product img{
+	width: 100%;
+	border-radius: 100%;
+}
+
+#right-product{
 	width: 50%;
 	float: right;
-	height: 125vh;
 }
 
-#product-div{
+#right-product img{
 	width: 100%;
-	height: 150vh;
-	display: flex;
-	flex-direction: row;
+	border-radius: 100%;
 }
-
-#product-div img{
-	width: 100%;
-	height: 150vh;
-}
-
-
 
 #contact-us{
 	width: 100%;
 	height: 200px;
-	background-color: black;
+	border-top: 1px double white;  
+	background-color: rgba(0,0,0,0.5);
+	overflow: hidden;
 }
 
 #logo{
 	width: 50%;
 	height: 200px;
-	background-color: black;
 	float: left;
 	display: flex;
 	flex-direction: column;
@@ -140,13 +173,13 @@ nav{
 #info{
 	width: 50%;
 	height: 200px;
-	background-color: black;
 	color: white;
 	float: right; 
+	overflow: hidden;
 }
 
 #info p{
-	padding: 0;
+	padding: 10px;
 	margin: 0;
 }
 
@@ -164,7 +197,7 @@ ul{
 }
 
 .copyright{
-	background-color: white;
+	background-color: rgba(0,0,0,0.9);
 	border-top: 1px solid black;
 	display: flex;
 	justify-content: center;
