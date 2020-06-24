@@ -62,8 +62,7 @@ nav{
 
 #follow{
 	justify-content: space-around;
-        margin: 0;
-	margin-bottom: 10px;
+	margin: 10px;
 }
 
 #follow a{
