@@ -12,6 +12,69 @@
     <link rel="stylesheet" type="text/css" href="index_style.css">
 
     <title>Regalia</title>
+
+    <style>
+		body {
+		  font-family: "Lato", sans-serif;
+		}
+
+		.mysidebar {
+		  height: 100%;
+		  width: 0;
+		  position: fixed;
+		  z-index: 1;
+		  top: 0;
+		  left: 0;
+		  background-color: #111;
+		  overflow-x: hidden;
+		  transition: 0.5s;
+		  padding-top: 60px;
+		}
+
+		.mysidebar a {
+		  padding: 8px 8px 8px 32px;
+		  text-decoration: none;
+		  font-size: 18px;
+		  color: rgba(255,255,255,0.8);
+		  display: block;
+		  transition: 0.3s;
+		}
+
+		.mysidebar a:hover {
+		  color: #f1f1f1;
+		}
+
+		.mysidebar .myclosebtn {
+		  position: absolute;
+		  top: 0;
+		  right: 25px;
+		  font-size: 36px;
+		  margin-left: 50px;
+		}
+
+		.myopenbtn {
+		  font-size: 20px;
+		  cursor: pointer;
+		  background-color: #111;
+		  color: white;
+		  border: none;
+		  padding: 0;
+		}
+
+		.myopenbtn:hover {
+		  background-color: #444;
+		}
+
+		#mymain {
+		  transition: margin-left .5s;
+		}
+
+		/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+		@media screen and (max-height: 450px) {
+		  .mysidebar {padding-top: 15px;}
+		  .mysidebar a {font-size: 18px;}
+		}
+		</style>
   </head>
   <body>
 
@@ -90,24 +153,15 @@
 		  <div class="carousel-inner">
 		    <div class="carousel-item active">
 		      <img src="slider1.jpg" class="img-fluid img-responsive" alt="...">
-		      <div class="carousel-caption d-md-block">
-		        <h3>First slide label</h3>
-		        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-		      </div>
+		      
 		    </div>
 		    <div class="carousel-item">
 		      <img src="slider2.jpg" class="img-fluid img-responsive" alt="...">
-		      <div class="carousel-caption d-md-block">
-		        <h3>Second slide label</h3>
-		        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-		      </div>
+		      
 		    </div>
 		    <div class="carousel-item">
 		      <img src="slider3.jpg" class="img-fluid img-responsive" alt="...">
-		      <div class="carousel-caption d-md-block">
-		        <h3>Third slide label</h3>
-		        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-		      </div>
+		      
 		    </div>
 		  </div>
 		  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -121,9 +175,40 @@
 		</div>
 
 		<div class="side-icon">
-              <a href="after_login.html"><img class="img-responsive img-fluid" src="profile.png"></a>
-              <a href="after_login.html"><img class="img-responsive img-fluid" src="wishlist.png"></a>
-              <a href="after_login.html"><img class="img-responsive img-fluid" src="valuables.png"></a>
+			<div id="mySidebar" class="mysidebar">
+			  <a href="javascript:void(0)" class="myclosebtn" onclick="closeNav()">×</a>
+			  <span><img class="img-responsive img-fluid" style="width: 25%; margin: 5%;" src="profile.png"></span><span style="font-size: 20px; font-weight: 500px;">Hello, User</span>
+			  <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> My Personal Details</a>
+			  <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> My Wishlist</a>
+			  <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> My Shopping Cart</a>
+			  <a href="#"><i class="fa fa-sort" aria-hidden="true"></i> My Orders</a>
+			  <a href="#"><i class="fa fa-gift" aria-hidden="true"></i> My Gift Voucher</a>
+			  <a href="#"><i class="fa fa-money" aria-hidden="true"></i> Regalia Money</a>
+			  <br>
+			  <a href="#"><i class="fa fa-bell" aria-hidden="true"></i> Notifications</a>
+			  <a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i> FAQs</a>
+			  <a href="#"><i class="fa fa-cogs" aria-hidden="true"></i> Settings</a>
+			  <br>
+			  <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Log Out</a>
+			</div>
+
+			<div id="mymain">
+			  <button class="myopenbtn" onclick="openNav()"><img class="img-responsive img-fluid" src="profile.png"></button>
+			</div>
+
+			<script>
+				function openNav() {
+				  document.getElementById("mySidebar").style.width = "250px";
+				  document.getElementById("mymain").style.marginLeft = "250px";
+				}
+
+				function closeNav() {
+				  document.getElementById("mySidebar").style.width = "0";
+				  document.getElementById("mymain").style.marginLeft= "0";
+				}
+			</script>
+              <button class="myopenbtn"><a href="after_login.html"><img class="img-responsive img-fluid" src="wishlist.png"></a></button>
+              <button class="myopenbtn"><a href="after_login.html"><img class="img-responsive img-fluid" src="valuables.png"></a></button>
 		</div>
 	</div>
 	

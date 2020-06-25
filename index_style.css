@@ -6,13 +6,11 @@
 	color: white;
 }
 
-img{
-	box-shadow: 0px 0px 4px white;
-}
-
 body{
 	font-family: 'Lato', sans-serif;
 	background-color: rgba(0,0,0,0.9);
+	margin: 0;
+	padding: 0;
 }
 
 nav{
@@ -98,6 +96,7 @@ nav button{
 	padding: 15px;
 	margin-top: 15px; 
 }
+
 .side-icon{
 	width: 12%; 
 	height: 100%;
@@ -146,11 +145,15 @@ nav button{
 .left{
 	float: left;
 	border-radius: 80px;
+	margin: 10px;
+	box-shadow: 0px 0px 4px white;
 }
 
 .right{
 	float: right;
 	border-radius: 80px;
+	margin: 10px;
+	box-shadow: 0px 0px 4px white;
 }
 
 .collection-hr{
@@ -165,6 +168,8 @@ nav button{
 #left-product img{
 	width: 100%;
 	border-radius: 100%;
+	margin: 10px;
+	box-shadow: 0px 0px 4px white;
 }
 
 #right-product{
@@ -175,6 +180,8 @@ nav button{
 #right-product img{
 	width: 100%;
 	border-radius: 100%;
+	margin: 10px;
+	box-shadow: 0px 0px 4px white;
 }
 
 #contact-us{
